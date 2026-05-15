@@ -121,7 +121,7 @@ export function RepeatAfterMe() {
 
   return (
     <motion.div
-      className="mx-auto max-w-3xl space-y-6"
+      className="mx-auto max-w-3xl space-y-6 px-1 sm:px-0"
       initial={reduced ? undefined : { opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.35 }}

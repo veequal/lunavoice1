@@ -44,7 +44,7 @@ export function ChildPracticeTab() {
       animate={{ opacity: 1, y: 0 }}
     >
       <div className="flex flex-col gap-2">
-        <h1 className="text-2xl font-semibold tracking-tight text-white light:text-slate-900 sm:text-3xl">
+        <h1 className="text-xl font-semibold tracking-tight text-white light:text-slate-900 sm:text-2xl md:text-3xl">
           Hey superstar — ready for a quick practice?
         </h1>
         <p className="text-sm text-slate-300 light:text-slate-700">Pick an exercise, tap the mic, and show off those awesome sounds.</p>
@@ -106,7 +106,7 @@ export function ChildPracticeTab() {
 
           <div className="space-y-4 lg:col-span-2">
             <GlassPanel glow>
-              <div className="flex items-center justify-between gap-3">
+              <div className="flex flex-wrap items-center justify-between gap-3">
                 <motion.div
                   initial={reduced ? undefined : { opacity: 0, x: -6 }}
                   animate={{ opacity: 1, x: 0 }}

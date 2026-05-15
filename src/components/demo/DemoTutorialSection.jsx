@@ -19,8 +19,8 @@ export function DemoTutorialSection({ onViewPricing }) {
   }, [])
 
   return (
-    <section id="demo" className="scroll-mt-24 border-t border-white/10 py-20 light:border-slate-200 sm:py-24">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 lg:grid-cols-2 lg:gap-10 sm:px-6">
+    <section id="demo" className="scroll-mt-24 border-t border-white/10 py-14 light:border-slate-200 sm:py-20 md:py-24">
+      <div className="mx-auto grid max-w-6xl items-center gap-8 px-3 sm:gap-12 sm:px-6 lg:grid-cols-2 lg:gap-10">
         <motion.div
           initial={reduced ? undefined : { opacity: 0, x: -16 }}
           whileInView={{ opacity: 1, x: 0 }}

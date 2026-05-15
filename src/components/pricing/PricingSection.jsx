@@ -8,7 +8,7 @@ export function PricingSection() {
   const { billingInterval, setBillingInterval } = useSubscription()
 
   return (
-    <section id="pricing" className="scroll-mt-24 border-t border-white/10 py-20 light:border-slate-200 sm:py-24">
+    <section id="pricing" className="scroll-mt-24 border-t border-white/10 py-14 light:border-slate-200 sm:py-20 md:py-24">
       <motion.div
         className="mx-auto max-w-6xl px-4 sm:px-6"
         initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ export function PricingSection() {
         </motion.div>
 
         <motion.div
-          className="mt-12 grid gap-6 lg:grid-cols-3 lg:gap-5"
+          className="mt-10 grid gap-5 sm:mt-12 sm:gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-5"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

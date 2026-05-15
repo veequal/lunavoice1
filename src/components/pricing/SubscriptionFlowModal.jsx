@@ -12,7 +12,7 @@ export function SubscriptionFlowModal() {
     <AnimatePresence>
       {flow.open ? (
         <motion.div
-          className="fixed inset-0 z-[110] flex items-center justify-center px-4"
+          className="fixed inset-0 z-[110] flex items-end justify-center p-3 sm:items-center sm:p-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -29,7 +29,7 @@ export function SubscriptionFlowModal() {
             initial={{ opacity: 0, y: 12, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 8, scale: 0.98 }}
-            className="relative w-full max-w-md rounded-3xl border border-white/10 bg-slate-950/95 p-6 shadow-glow backdrop-blur-2xl light:border-slate-200 light:bg-white"
+            className="relative max-h-[min(90dvh,640px)] w-full max-w-md overflow-y-auto rounded-3xl border border-white/10 bg-slate-950/95 p-5 shadow-glow backdrop-blur-2xl sm:rounded-3xl sm:p-6 light:border-slate-200 light:bg-white"
           >
             <button
               type="button"

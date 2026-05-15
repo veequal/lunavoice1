@@ -123,7 +123,7 @@ export default function DoctorDashboardPage() {
               <ApiErrorBanner message={workspace.error} onRetry={workspace.refetch} />
               {patientsQ.error ? <ApiErrorBanner message={patientsQ.error} onRetry={patientsQ.refetch} /> : null}
 
-              <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+              <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-4">
                 {(analytics?.kpis ?? []).map((kpi) => (
                   <StatCard
                     key={kpi.id}
@@ -200,7 +200,7 @@ export default function DoctorDashboardPage() {
                       : doctorNotifications.map((n) => (
                           <div
                             key={n.id}
-                            className="flex items-start justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 light:border-slate-200 light:bg-white/70"
+                            className="flex flex-col gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 sm:flex-row sm:items-start sm:justify-between sm:gap-3 light:border-slate-200 light:bg-white/70"
                           >
                             <div>
                               <p className="text-sm font-semibold text-white light:text-slate-900">{n.title}</p>
@@ -265,7 +265,7 @@ export default function DoctorDashboardPage() {
                 title="Patients"
                 description="Search by name, MRN, or clinical tags."
                 action={
-                  <div className="relative w-full sm:w-80">
+                  <div className="relative w-full min-w-0 sm:max-w-sm">
                     <Search className="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
                     <input
                       value={query}

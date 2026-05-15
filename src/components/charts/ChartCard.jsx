@@ -16,8 +16,9 @@ export function ChartCard({ title, subtitle, children, isLoading, className = ''
           <Skeleton className="h-48 w-full rounded-xl" />
         </div>
       ) : (
-        <div className="h-56 w-full">{children}</div>
+        <div className="h-48 w-full min-w-0 overflow-x-auto sm:h-56">{children}</div>
       )}
     </GlassPanel>
   )
 }
+

@@ -5,8 +5,8 @@ export function DataTableLite({ rows, columns, empty }) {
 
   return (
     <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950/30 light:border-slate-200 light:bg-white/60">
-      <div className="hidden md:block">
-        <table className="w-full text-left text-sm">
+      <div className="hidden overflow-x-auto lg:block">
+        <table className="w-full min-w-[32rem] text-left text-sm">
           <thead className="border-b border-white/10 bg-white/5 text-xs uppercase tracking-wide text-slate-400 light:border-slate-200 light:bg-slate-900/5 light:text-slate-600">
             <tr>
               {columns.map((c) => (
@@ -30,7 +30,7 @@ export function DataTableLite({ rows, columns, empty }) {
         </table>
       </div>
 
-      <div className="divide-y divide-white/10 md:hidden light:divide-slate-200">
+      <div className="divide-y divide-white/10 lg:hidden light:divide-slate-200">
         {rows.map((row) => (
           <div key={row.id} className="space-y-2 p-4">
             {columns.map((c) => (

@@ -10,7 +10,7 @@ export function SectionHeader({ eyebrow, title, description, action, className =
         <h2 className="mt-1 text-lg font-semibold tracking-tight text-white light:text-slate-900">{title}</h2>
         {description ? <p className="mt-1 max-w-prose text-sm text-slate-400 light:text-slate-600">{description}</p> : null}
       </div>
-      {action ? <div className="shrink-0">{action}</div> : null}
+      {action ? <div className="w-full shrink-0 sm:w-auto">{action}</div> : null}
     </div>
   )
 }

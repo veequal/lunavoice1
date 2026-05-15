@@ -5,7 +5,7 @@ import { cn } from '../../lib/cn.js'
 export function BillingToggle({ value, onChange }) {
   return (
     <motion.div
-      className="inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-slate-950/50 p-1.5 backdrop-blur-xl light:border-slate-200 light:bg-white/80"
+      className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-950/50 p-1.5 backdrop-blur-xl sm:gap-3 light:border-slate-200 light:bg-white/80"
       initial={{ opacity: 0, y: 8 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -33,7 +33,7 @@ export function BillingToggle({ value, onChange }) {
           </button>
         )
       })}
-      <span className="hidden rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-emerald-200 sm:inline light:text-emerald-800">
+      <span className="rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-emerald-200 sm:text-[11px] light:text-emerald-800">
         Save 15%
       </span>
     </motion.div>

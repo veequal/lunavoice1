@@ -60,7 +60,7 @@ export function DashboardShell({
           planSlot={showPlanUsage ? <DashboardPlanStrip accent={accent} /> : null}
         />
         {headerSlot}
-        <main className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
+        <main className="flex-1 overflow-x-hidden overflow-y-auto px-3 py-5 pb-safe sm:px-4 sm:py-6 md:px-6">
           {typeof children === 'function' ? children(ctx) : children}
         </main>
       </motion.div>

@@ -166,7 +166,7 @@ export default function RoleLoginPage() {
       <div className="pointer-events-none fixed -left-32 top-0 -z-10 h-[28rem] w-[28rem] rounded-full bg-indigo-600/30 blur-3xl" />
       <div className="pointer-events-none fixed -right-32 bottom-0 -z-10 h-[32rem] w-[32rem] rounded-full bg-violet-600/25 blur-3xl" />
 
-      <header className="mx-auto flex max-w-lg items-center justify-between px-4 pb-2 pt-8 sm:px-6 sm:pt-10">
+      <header className="mx-auto flex max-w-lg items-center justify-between px-3 pb-2 pt-6 sm:px-6 sm:pt-10">
         <Link to="/" aria-label="Back to home">
           <GlowButton variant="secondary" className="!gap-2 !px-3 !py-2">
             <ArrowLeft className="h-4 w-4" />
@@ -176,7 +176,7 @@ export default function RoleLoginPage() {
         <ThemeToggle />
       </header>
 
-      <div className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-lg flex-col items-center justify-center px-4 pb-16 pt-4 sm:px-6">
+      <div className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-lg flex-col items-center justify-center px-3 pb-16 pt-4 sm:px-6">
         <motion.div {...cardMotion} className="mb-8 w-full">
           <div className="flex justify-center">
             <LunaVoiceLogo size="md" />
@@ -195,7 +195,7 @@ export default function RoleLoginPage() {
         <motion.div
           {...cardMotion}
           transition={{ ...cardMotion.transition, delay: reduced ? 0 : 0.06 }}
-          className={`relative w-full max-w-md rounded-3xl border border-white/10 bg-slate-950/50 p-6 shadow-glow backdrop-blur-2xl ring-1 ring-white/5 light:border-slate-200/80 light:bg-white/75 light:ring-slate-200/60 sm:p-8 ${cfg.ring}`}
+          className={`relative w-full max-w-md rounded-3xl border border-white/10 bg-slate-950/50 p-5 shadow-glow backdrop-blur-2xl ring-1 ring-white/5 light:border-slate-200/80 light:bg-white/75 light:ring-slate-200/60 sm:p-8 ${cfg.ring}`}
         >
           <div className={`pointer-events-none absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br opacity-70 ${cfg.accent}`} />
           <div className="pointer-events-none absolute -inset-px -z-10 rounded-3xl bg-gradient-to-br from-indigo-500/20 via-transparent to-violet-500/20 opacity-60 blur-sm" />

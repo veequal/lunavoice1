@@ -197,7 +197,7 @@ export default function ParentDashboardPage() {
               <ApiErrorBanner message={hub.error} onRetry={hub.refetch} />
               {speechWeekly.error ? <ApiErrorBanner message={speechWeekly.error} onRetry={speechWeekly.refetch} /> : null}
 
-              <div className="grid gap-4 lg:grid-cols-3">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <GlassPanel className="lg:col-span-2" glow>
                   {hub.loading || !parentChildProfile ? (
                     <div className="h-48 animate-pulse rounded-2xl bg-white/5 light:bg-slate-100" />

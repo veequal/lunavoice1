@@ -13,7 +13,7 @@ export function LandingNavbar({ onViewPricing, onViewDemo }) {
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
     >
       <motion.div
-        className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6"
+        className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-3 py-2.5 sm:gap-3 sm:px-6 sm:py-3"
         initial={false}
       >
         <LunaVoiceLogo size="sm" />

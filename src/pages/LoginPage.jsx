@@ -65,7 +65,7 @@ export default function LoginPage() {
 
       <LandingNavbar onViewPricing={scrollToPricing} onViewDemo={scrollToDemo} />
 
-      <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-5xl flex-col px-4 pb-8 pt-10 sm:px-6 sm:pt-14">
+      <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-5xl flex-col px-3 pb-8 pt-8 sm:px-6 sm:pt-14">
         <div className="flex flex-1 flex-col items-center justify-center">
           <div className="mx-auto w-full max-w-3xl text-center">
             <motion.p
@@ -77,7 +77,7 @@ export default function LoginPage() {
               LunaVoice
             </motion.p>
             <motion.h1
-              className="mt-4 text-balance text-3xl font-semibold tracking-tight text-white light:text-slate-900 sm:text-4xl md:text-5xl md:leading-[1.1]"
+              className="mt-4 text-balance text-2xl font-semibold tracking-tight text-white light:text-slate-900 sm:text-4xl md:text-5xl md:leading-[1.1]"
               initial={reduced ? undefined : { opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.04, ease: [0.22, 1, 0.36, 1] }}
@@ -115,7 +115,7 @@ export default function LoginPage() {
                 >
                   <Link
                     to={p.to}
-                    className={`group flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/40 px-5 py-4 shadow-glass backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.07] light:border-slate-200/90 light:bg-white/80 light:hover:bg-white ${p.accent}`}
+                    className={`group flex items-center gap-3 rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3.5 shadow-glass backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.07] sm:gap-4 sm:px-5 sm:py-4 light:border-slate-200/90 light:bg-white/80 light:hover:bg-white ${p.accent}`}
                   >
                     <motion.div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-indigo-500/25 to-violet-500/15 text-indigo-100 light:border-slate-200 light:from-indigo-100 light:to-violet-100 light:text-indigo-700">
                       <Icon className="h-6 w-6" aria-hidden />
