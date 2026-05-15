@@ -40,7 +40,7 @@ export const pricingPlans = [
   {
     id: 'compact',
     name: 'Compact',
-    monthlyPrice: 1600,
+    monthlyPrice: 1400,
     patientLimitLabel: 'Less than 100 patients',
     patientLimitMax: 99,
     recommendedFor: ['Solo practitioners', 'Boutique therapy rooms', 'Pilot programs'],
