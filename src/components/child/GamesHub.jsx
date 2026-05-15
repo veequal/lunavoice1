@@ -53,7 +53,7 @@ export function GamesHub() {
         >
           <div className={cn('absolute inset-0 bg-gradient-to-br opacity-80', featured.gradient)} />
           <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-fuchsia-500/20 blur-3xl" />
-          <div className="relative flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:p-8">
+          <div className="relative flex min-w-0 flex-col gap-6 p-6 lg:flex-row lg:flex-wrap lg:items-center lg:gap-x-6 sm:p-8">
             <motion.div
               className="flex h-28 w-28 shrink-0 items-center justify-center rounded-3xl border border-white/15 bg-white/10 text-5xl shadow-glow-sm backdrop-blur-md"
               whileHover={reduced ? undefined : { scale: 1.05, rotate: 3 }}

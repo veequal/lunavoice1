@@ -5,7 +5,7 @@ export function ApiErrorBanner({ message, onRetry, className = '' }) {
   if (!message) return null
   return (
     <div
-      className={`flex flex-col gap-3 rounded-2xl border border-amber-400/25 bg-amber-500/10 px-4 py-3 sm:flex-row sm:items-center sm:justify-between light:border-amber-200 light:bg-amber-50 ${className}`}
+      className={`flex min-w-0 flex-col gap-3 rounded-2xl border border-amber-400/25 bg-amber-500/10 px-4 py-3 lg:flex-row lg:flex-wrap lg:items-center lg:justify-between lg:gap-x-4 lg:gap-y-2 light:border-amber-200 light:bg-amber-50 ${className}`}
       role="alert"
     >
       <div className="flex items-start gap-3">

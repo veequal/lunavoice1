@@ -388,7 +388,7 @@ export default function DoctorDashboardPage() {
                     secureDocuments.map((d) => (
                       <div
                         key={d.id}
-                        className="flex flex-col justify-between gap-2 rounded-xl border border-white/10 bg-slate-950/25 p-3 sm:flex-row sm:items-center light:border-slate-200 light:bg-white/80"
+                        className="flex min-w-0 flex-col justify-between gap-2 rounded-xl border border-white/10 bg-slate-950/25 p-3 lg:flex-row lg:flex-wrap lg:items-center lg:gap-x-4 light:border-slate-200 light:bg-white/80"
                       >
                         <div>
                           <p className="font-medium text-white light:text-slate-900">{d.label}</p>

@@ -202,7 +202,7 @@ export default function ParentDashboardPage() {
                   {hub.loading || !parentChildProfile ? (
                     <div className="h-48 animate-pulse rounded-2xl bg-white/5 light:bg-slate-100" />
                   ) : (
-                    <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+                    <div className="flex min-w-0 flex-col gap-6 lg:flex-row lg:flex-wrap lg:items-start lg:justify-between lg:gap-x-6">
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-wide text-teal-200/90 light:text-teal-800">Child progress</p>
                         <p className="mt-2 text-2xl font-semibold tracking-tight text-white light:text-slate-900">{parentChildProfile.name}</p>
@@ -427,7 +427,7 @@ export default function ParentDashboardPage() {
               <div className="space-y-3">
                 {parentSessionHistory.map((h, idx) => (
                   <GlassPanel key={h.id} padding="p-4">
-                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex min-w-0 flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-center lg:justify-between lg:gap-x-4 lg:gap-y-2">
                       <div className="flex items-start gap-3">
                         <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-teal-200 light:border-slate-200 light:bg-white light:text-teal-700">
                           <HeartHandshake className="h-5 w-5" />
@@ -437,7 +437,7 @@ export default function ParentDashboardPage() {
                           <p className="text-xs text-slate-400 light:text-slate-600">{formatShortDate(h.date)}</p>
                         </div>
                       </div>
-                      <div className="flex items-center gap-3 sm:justify-end">
+                      <div className="flex shrink-0 flex-wrap items-center gap-3 lg:justify-end">
                         <Badge tone="success">{h.score}% session score</Badge>
                         <span className="text-xs text-slate-400 light:text-slate-600">{h.durationMin}m</span>
                         {idx === 0 ? <Badge tone="info">Latest</Badge> : null}

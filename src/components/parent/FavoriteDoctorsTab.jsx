@@ -93,7 +93,7 @@ export function FavoriteDoctorsTab() {
                     <p className="mt-2 line-clamp-2 text-sm text-slate-300 light:text-slate-700">{doctor.bio}</p>
                   </div>
                 </div>
-                <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+                <motion.div className="mt-4 flex min-w-0 flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-center lg:gap-x-4">
                   <motion.button
                     type="button"
                     whileHover={{ y: -1 }}
@@ -117,7 +117,7 @@ export function FavoriteDoctorsTab() {
                     <Trash2 className="h-4 w-4" />
                     Remove
                   </motion.button>
-                </div>
+                </motion.div>
               </motion.article>
             ))}
           </AnimatePresence>

@@ -2,7 +2,7 @@ import { cn } from '../../lib/cn.js'
 
 export function SectionHeader({ eyebrow, title, description, action, className = '' }) {
   return (
-    <div className={cn('flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between', className)}>
+    <div className={cn('flex min-w-0 flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-end lg:justify-between lg:gap-x-4 lg:gap-y-2', className)}>
       <div>
         {eyebrow ? (
           <p className="text-xs font-semibold uppercase tracking-wider text-indigo-300/90 light:text-indigo-700">{eyebrow}</p>

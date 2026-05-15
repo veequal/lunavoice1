@@ -6,8 +6,8 @@ import { ThemeToggle } from './ThemeToggle.jsx'
 /** @param {{ title: string, subtitle?: string, showBack?: boolean, onMenuClick?: () => void, showMenuTrigger?: boolean, planSlot?: import('react').ReactNode }} props */
 export function PageHeader({ title, subtitle, showBack = true, onMenuClick, showMenuTrigger, planSlot }) {
   return (
-    <header className="flex flex-col gap-4 border-b border-white/10 bg-slate-950/40 px-4 py-4 backdrop-blur-xl light:border-slate-200 light:bg-white/70 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-      <div className="flex items-start gap-3">
+    <header className="flex flex-col gap-4 border-b border-white/10 bg-slate-950/40 px-4 py-4 backdrop-blur-xl light:border-slate-200 light:bg-white/70 lg:flex-row lg:items-start lg:justify-between lg:gap-6 sm:px-6">
+      <div className="min-w-0 flex items-start gap-3">
         {showMenuTrigger && onMenuClick ? (
           <GlowButton
             type="button"
@@ -31,7 +31,7 @@ export function PageHeader({ title, subtitle, showBack = true, onMenuClick, show
           {subtitle ? <p className="text-sm text-slate-400 light:text-slate-600">{subtitle}</p> : null}
         </div>
       </div>
-      <div className="flex w-full flex-col items-stretch gap-2 sm:w-auto sm:min-w-[280px] sm:items-end">
+      <div className="flex w-full min-w-0 flex-col items-stretch gap-2 lg:w-auto lg:max-w-xl lg:items-end">
         {planSlot}
         <div className="flex justify-end">
           <ThemeToggle />

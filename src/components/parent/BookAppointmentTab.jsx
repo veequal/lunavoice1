@@ -48,7 +48,7 @@ function DoctorCard({ doctor, delay, favorited, onBook, onToggleFavorite }) {
       className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035] p-5 shadow-glass backdrop-blur-xl light:border-slate-200 light:bg-white/90"
     >
       <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-gradient-to-br from-teal-500/20 to-transparent blur-3xl transition duration-700 group-hover:opacity-100" />
-      <div className="relative flex flex-col gap-4 sm:flex-row">
+      <div className="relative flex min-w-0 flex-col gap-4 lg:flex-row lg:flex-wrap lg:gap-x-5">
         <div className="relative shrink-0">
           <img
             src={doctor.avatarUrl}
@@ -82,7 +82,7 @@ function DoctorCard({ doctor, delay, favorited, onBook, onToggleFavorite }) {
         </div>
       </div>
 
-      <div className="relative mt-5 flex flex-col gap-3 sm:flex-row">
+      <div className="relative mt-5 flex min-w-0 flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-center lg:gap-x-3">
         <motion.button
           type="button"
           whileHover={{ y: -1 }}

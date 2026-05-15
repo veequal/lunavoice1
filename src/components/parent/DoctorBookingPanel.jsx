@@ -233,7 +233,7 @@ export function DoctorBookingPanel({ doctor, open, onClose, favorited, onToggleF
 
             {phase !== 'success' ? (
               <div className="border-t border-white/10 bg-slate-950/55 px-5 py-4 backdrop-blur-xl sm:px-6 light:border-slate-200 light:bg-white/90">
-                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex min-w-0 flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-center lg:justify-between lg:gap-x-4 lg:gap-y-2">
                   <p className="text-xs text-slate-500 light:text-slate-600">
                     {selectedSlot
                       ? `${selectedSlot.dayLabel} · ${selectedSlot.timeLabel} · ${selectedSlot.consultationType}`
